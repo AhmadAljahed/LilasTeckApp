@@ -143,6 +143,12 @@ h6 {
   }
 }
 
+@media screen and (max-width: 385px) {
+  .header .btn-getstarted {
+    display: none;
+  }
+}
+
 /* Index Page Header
 ------------------------------*/
 .index-page .header {
