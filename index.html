@@ -46,11 +46,7 @@
   <meta property="og:site_name" content="ليلاس تيك">
 
   <meta name="author" content="ليلاس تيك">
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Arabic:wght@400;500;700&display=swap"
-    rel="stylesheet">
+
 
 
   <!-- Vendor CSS Files -->
@@ -63,7 +59,8 @@
   <!-- Main CSS File -->
   <link href="assets/css/minified.css" rel="stylesheet">
 
-  <link rel="preload" as="image" href="assets/img/hero-img.webp">
+  <link rel="preload" as="image" href="assets/img/hero-img.webp" imagesrcset="assets/img/hero-img.webp"
+    imagesizes="600px">
   <link rel="preload" as="image" href="assets/img/logo.webp">
   <link rel="preload" as="image" href="assets/img/logotitle.webp">
   <link rel="preload" as="image" href="assets/img/clients/clients-1.webp">
@@ -157,8 +154,8 @@
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img">
-            <img src="assets/img/hero-img.webp" class="img-fluid animated" width="600" height="400"
-              alt="تركيب ستلايت حديث في الإمارات">
+            <img src="assets/img/hero-img.webp" class="img-fluid animated" width="600px" height="400px"
+              alt="تركيب ستلايت حديث في الإمارات" fetchpriority="high">
           </div>
         </div>
       </div>
@@ -210,22 +207,22 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="عميل رقم ١"
-                width="150" height="80"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="عميل رقم ٢"
-                width="150" height="80"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="عميل رقم ٣"
-                width="150" height="80"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="عميل رقم ٤"
-                width="150" height="80"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="عميل رقم ٥"
-                width="150" height="80"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="عميل رقم ٦"
-                width="150" height="80"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt="عميل رقم ٧"
-                width="150" height="80"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="عميل رقم ٨"
-                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="عميل رقم ١">
+            </div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="عميل رقم ٢">
+            </div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="عميل رقم ٣">
+            </div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="عميل رقم ٤">
+            </div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="عميل رقم ٥">
+            </div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="عميل رقم ٦">
+            </div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt="عميل رقم ٧">
+            </div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="عميل رقم ٨">
+            </div>
           </div>
         </div>
 
@@ -536,7 +533,7 @@
                   <img src="assets/img/person/client3.webp" alt="عميل 1" class="rounded-circle ms-3"
                     style="width:50px; height:50px; object-fit:cover;" loading="lazy">
                   <div>
-                    <h6 class="mb-0 fw-bold">سعيد الكعبي</h6>
+                    <h4 class="mb-0 fw-bold">سعيد الكعبي</h4>
                     <small class="text-muted">دبي - الإمارات</small>
                   </div>
                 </div>
@@ -551,7 +548,7 @@
                   <img src="assets/img/person/client2.webp" alt="عميل 2" class="rounded-circle ms-3"
                     style="width:50px; height:50px; object-fit:cover;" loading="lazy">
                   <div>
-                    <h6 class="mb-0 fw-bold">نورة الشامسي</h6>
+                    <h4 class="mb-0 fw-bold">نورة الشامسي</h4>
                     <small class="text-muted">أبوظبي - الإمارات</small>
                   </div>
                 </div>
@@ -567,7 +564,7 @@
                   <img src="assets/img/person/client1.webp" alt="عميل 3" class="rounded-circle ms-3"
                     style="width:50px; height:50px; object-fit:cover;" loading="lazy">
                   <div>
-                    <h6 class="mb-0 fw-bold">محمد الحسن</h6>
+                    <h4 class="mb-0 fw-bold">محمد الحسن</h4>
                     <small class="text-muted">الشارقة - الإمارات</small>
                   </div>
                 </div>
