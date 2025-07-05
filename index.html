@@ -12,7 +12,7 @@
     "url": "https://www.yourdomain.ae",
     "telephone": "+9710509899140",
     "address": {
-      "@type": "25314",
+      "@type": "PostalAddress",
       "addressLocality": "دبي",
       "addressCountry": "الإمارات"
     },
@@ -49,8 +49,9 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Arabic:wght@400;500;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Arabic:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -61,6 +62,19 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/minified.css" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/img/hero-img.webp">
+  <link rel="preload" as="image" href="assets/img/logo.webp">
+  <link rel="preload" as="image" href="assets/img/logotitle.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-1.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-2.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-3.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-4.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-5.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-6.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-7.webp">
+  <link rel="preload" as="image" href="assets/img/clients/clients-8.webp">
+
 </head>
 
 <body class="index-page" dir="rtl">
@@ -69,14 +83,14 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-around">
 
       <a href="index.html" class="logo d-flex align-items-center ">
-        <img src="assets/img/logo.webp" class="img-logo" alt="فني ستلايت دبي" loading="lazy">
+        <img src="assets/img/logo.webp" class="img-logo" alt="شعار ليلاس تيك - فني ستلايت في الإمارات">
         <h1 class="sitename">ليلاس تيك
         </h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="القائمة الرئيسية">
         <ul>
-          <li><a href="#hero">الصفحة لرئيسية</a></li>
+          <li><a href="#hero">الصفحة الرئيسية</a></li>
           <li><a href="#about ">من نحن</a></li>
           <li><a href="#services">خدماتنا</a></li>
           <li class="dropdown" dir="rtl"><a href="#"><span></span>خدمات حسب المنطقة </span> <i
@@ -142,21 +156,22 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.webp" class="img-fluid animated" alt="تركيب ستلايت حديث في الإمارات"
-              loading="lazy">
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="assets/img/hero-img.webp" class="img-fluid animated" width="600" height="400"
+              alt="تركيب ستلايت حديث في الإمارات">
           </div>
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
     <!-- Clients Section -->
     <section id="clients" class="clients section light-background">
 
       <div class="container" data-aos="zoom-in">
 
-        <div class="swiper init-swiper">
+        <div class="swiper init-swiper" style="min-height:50px;">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -195,22 +210,22 @@
             }
           </script>
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
-            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt=""
-                loading="lazy"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-1.webp" class="img-fluid" alt="عميل رقم ١"
+                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-2.webp" class="img-fluid" alt="عميل رقم ٢"
+                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-3.webp" class="img-fluid" alt="عميل رقم ٣"
+                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-4.webp" class="img-fluid" alt="عميل رقم ٤"
+                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-5.webp" class="img-fluid" alt="عميل رقم ٥"
+                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-6.webp" class="img-fluid" alt="عميل رقم ٦"
+                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-7.webp" class="img-fluid" alt="عميل رقم ٧"
+                width="150" height="80"></div>
+            <div class="swiper-slide"><img src="assets/img/clients/clients-8.webp" class="img-fluid" alt="عميل رقم ٨"
+                width="150" height="80"></div>
           </div>
         </div>
 
@@ -234,7 +249,7 @@
               نحن في <strong>ليلاس تيك</strong> شركة رائدة في تقديم خدمات الستلايت في دولة الإمارات العربية المتحدة،
               نعمل بخبرة
               تمتد
-              لأكثر من <strong>10</strong> عامًا في مجال التركيب والصيانة والبرمجة لجميع أنواع أنظمة الستلايت
+              لأكثر من <strong>10</strong> سنوات في مجال التركيب والصيانة والبرمجة لجميع أنواع أنظمة الستلايت
               الحديثة.
             </p>
 
@@ -701,7 +716,7 @@
             <li><a href="#services" class="text-secondary text-decoration-none">خدماتنا</a></li>
             <li><a href="#about" class="text-secondary text-decoration-none">من نحن</a></li>
             <li><a href="#faq" class="text-secondary text-decoration-none">الأسئلة الشائعة</a></li>
-            <li><a href="#contact" class="text-secondary text-decoration-none">اتصل بنا</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">اتصل بنا</a></li>
           </ul>
         </div>
 
@@ -746,7 +761,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-  <script src="assets/vendor/php-email-form/validate.js" defer></script>
   <script src="assets/vendor/aos/aos.js" defer></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js" defer></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
@@ -757,20 +771,19 @@
   <!-- Main JS File -->
   <script src="assets/js/main.min.js" defer></script>
 
-  <!-- AOS CDN CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <!-- AOS CDN JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 
   <!-- AOS Init -->
   <script>
     window.addEventListener('load', () => {
-      AOS.init({
-        duration: 800,
-        easing: 'ease-in-out',
-        once: true
-      });
+      setTimeout(() => {
+        AOS.init({
+          duration: 800,
+          easing: 'ease-in-out',
+          once: true
+        });
+      }, 200); // تأخير 200 مللي ثانية
     });
   </script>
 
